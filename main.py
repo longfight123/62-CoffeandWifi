@@ -18,11 +18,11 @@ from wtforms import StringField, SubmitField, SelectField
 from wtforms.validators import DataRequired, URL
 import csv
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
-load_dotenv('.env')
+#load_dotenv('.env')
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('SECRET_KET')
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 Bootstrap(app)
 
 
